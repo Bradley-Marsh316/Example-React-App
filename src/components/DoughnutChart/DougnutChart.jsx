@@ -27,31 +27,29 @@ export default function DougnutChart({ data = [] }) {
         itemStyle: {
           borderRadius: 6,
           borderColor: '#fff',
-          borderWidth: 2
+          borderWidth: 2,
         },
         emphasis: {
           itemStyle: {
             // Change the color of the hovered segment
-            color: '#0d6efd'
+            color: '#0d6efd',
           },
         },
-        data: data.map(({ name, value }) => (
-          {
-            name,
-            value,
-            label: {
-              formatter: function ({ value }) {
-                  if (value < 10) return ''
-                  return value + '%\n';
-              },
-              show: true,
-              position: "inside",
-              color: 'white',
-              fontWeight: 'bold',
-              fontSize: 12
+        data: data.map(({ name, value }) => ({
+          name,
+          value,
+          label: {
+            formatter: function ({ value }) {
+              if (value < 10) return '';
+              return value + '%\n';
             },
-          }
-        )),
+            show: true,
+            position: 'inside',
+            color: 'white',
+            fontWeight: 'bold',
+            fontSize: 12,
+          },
+        })),
       },
     ],
     color: '#63d9f8',

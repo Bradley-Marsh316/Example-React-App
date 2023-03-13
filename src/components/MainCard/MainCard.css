@@ -53,7 +53,8 @@ table {
   table-layout: auto;
 }
 
-td, th {
+td,
+th {
   border-bottom: solid 2px #f2f2f3;
 }
 
@@ -65,13 +66,15 @@ th {
 }
 
 /* This isnt responsive as a larger company name will wrap in the cell */
-td:last-child, th:last-child {
+td:last-child,
+th:last-child {
   text-align: right;
   padding-right: 1rem;
   width: 20%;
 }
 
-td:first-child, th:first-child {
+td:first-child,
+th:first-child {
   padding-left: 2rem;
   width: 30%;
 }
