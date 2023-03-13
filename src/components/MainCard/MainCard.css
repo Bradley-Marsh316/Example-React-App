@@ -1,0 +1,77 @@
+.card-body {
+  width: 1100px;
+  height: 500px;
+  background-color: white;
+  box-shadow: 1px 1px 9px 2px #e7e7e9;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.title-container {
+  display: flex;
+  margin: 0;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin: 0;
+  line-height: 2.25rem;
+  margin-left: 0.5rem;
+}
+
+.MuiButtonBase-root {
+  text-transform: capitalize !important;
+}
+
+.card-content {
+  height: 100%;
+  width: 100%;
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.chart-container {
+  height: 270px;
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+
+/* Font here need to be monospace as the characters have the same width on the design */
+table {
+  width: 100%;
+  height: 80%;
+  text-align: left;
+  border-spacing: 0px;
+  font-weight: 600;
+  table-layout: auto;
+}
+
+td, th {
+  border-bottom: solid 2px #f2f2f3;
+}
+
+th {
+  color: #747081;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  padding-bottom: 0.75rem;
+}
+
+/* This isnt responsive as a larger company name will wrap in the cell */
+td:last-child, th:last-child {
+  text-align: right;
+  padding-right: 1rem;
+  width: 20%;
+}
+
+td:first-child, th:first-child {
+  padding-left: 2rem;
+  width: 30%;
+}

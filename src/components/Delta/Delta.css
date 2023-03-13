@@ -1,0 +1,22 @@
+.delta {
+  border-radius: 6px;
+  width: fit-content;
+  float: right;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 2px 4px;
+}
+
+.delta-green {
+  background-color: #e0f7eb;
+  color: #37d789;
+}
+
+.delta-red {
+  background-color: #dc1531;
+  color: #dc1531;
+}
+
+.delta span {
+  margin-right: 2px;
+}
