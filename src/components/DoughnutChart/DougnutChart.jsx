@@ -4,7 +4,6 @@ import * as echarts from 'echarts';
 export default function DougnutChart({ data = [] }) {
   const chartRef = React.useRef(null);
 
-  // Need to change the color of the hovered segment
   const option = {
     tooltip: {
       trigger: 'item',
@@ -29,6 +28,12 @@ export default function DougnutChart({ data = [] }) {
           borderRadius: 6,
           borderColor: '#fff',
           borderWidth: 2
+        },
+        emphasis: {
+          itemStyle: {
+            // Change the color of the hovered segment
+            color: '#0d6efd'
+          },
         },
         data: data.map(({ name, value }) => (
           {
